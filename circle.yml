@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 4.6.0
+
+deployment:
+  staging:
+    branch: master
+    owner: bdgamble
+    commands:
+      - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" >> ~/.npmrc
+      - npm install -g publish
+      - publish

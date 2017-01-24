@@ -1,0 +1,28 @@
+{
+  "name": "json-path-position-info",
+  "version": "0.0.1",
+  "description": "Module to provide the position info of a JSONPath within a blob of JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "json",
+    "jsonpath",
+    "position"
+  ],
+  "author": "Bryan Gamble <bryan.d.gamble@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-source-map": "0.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdgamble/json-path-position-info.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bdgamble/json-path-position-info/issues"
+  },
+  "homepage": "https://github.com/bdgamble/json-path-position-info#readme"
+}
