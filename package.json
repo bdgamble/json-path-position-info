@@ -4,7 +4,7 @@
   "description": "Module to provide the position info of a JSONPath within a blob of JSON",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "eslint ."
   },
   "keywords": [
     "json",
@@ -14,9 +14,11 @@
   "author": "Bryan Gamble <bryan.d.gamble@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "json-source-map": "0.4.0"
+    "json-source-map": "^0.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^3.14.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bdgamble/json-path-position-info.git"
