@@ -1,4 +1,6 @@
 # json-path-position-info
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/bdgamble/json-path-position-info.svg)](https://greenkeeper.io/)
 Module to provide the position info of a JSONPath within a blob of JSON
 
 ## Usage
