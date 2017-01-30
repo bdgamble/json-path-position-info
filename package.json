@@ -1,6 +1,6 @@
 {
   "name": "json-path-position-info",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module to provide the position info of a JSONPath within a blob of JSON",
   "main": "index.js",
   "scripts": {
