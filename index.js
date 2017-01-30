@@ -18,15 +18,17 @@ module.exports = function(json, path, pathSeparator, whitespace) {
   const result = jsonMap.parse(json);
 
   if (!result.pointers[sourceMapPath]) {
-    throw new Error('Path does not exist in the provided json.');
+    throw new Error(`Path ${path} does not exist in the provided json.`);
   }
 
+  const locationInfo = result.pointers[sourceMapPath].key
+    || result.pointers[sourceMapPath].value; // if not key data, then part of an array and need value data
   const data = Object.assign(
     { source: JSON.stringify(result.data, null, whitespace) },
-    result.pointers[sourceMapPath].key,
+    locationInfo,
     {
-      line: result.pointers[sourceMapPath].key.line + 1,
-      column: result.pointers[sourceMapPath].key.column + 1
+      line: locationInfo.line + 1,
+      column: locationInfo.column + 1
     } // bump line and column numbers by one to account for zero-based index
   );
 
