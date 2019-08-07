@@ -14,7 +14,7 @@
   "author": "Bryan Gamble <bryan.d.gamble@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "json-source-map": "^0.4.0"
+    "json-source-map": "^0.6.1"
   },
   "devDependencies": {
     "eslint": "^3.14.0"
